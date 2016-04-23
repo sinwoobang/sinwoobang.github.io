@@ -1,3 +1,16 @@
 <script>
-  window.location = 'http://github.com/sinwoobang';
+  function isMobile() {
+    return (/android|blackberry|iemobile|ipad|iphone|ipod|opera mini|webos/i).test(navigator.userAgent);
+  }
+  
+  var href = location.href;
+  if (href.indexOf('kakao=1') >= 0) {
+    location = 'https://open.kakao.com/o/sByUiqg';
+  } else if (href.indexOf('fb=1') >= 0) {
+    if (isMobile()) {
+      location = 'fb-messenger://user-thread/100001739938814';
+    } else {
+      location = 'http://fb.me/maitrouble';
+    }
+  }
 </script>
