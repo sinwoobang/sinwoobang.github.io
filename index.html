@@ -1,27 +1,90 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-  </head>
-  <body>
-  <a href="/?fb=1">Facebook Messenger</a><br/>
-  <a href="/?kakao=1">KakaoTalk</a>
-  
-  <script>
-    function isMobile() {
-      return (/android|blackberry|iemobile|ipad|iphone|ipod|opera mini|webos/i).test(navigator.userAgent);
-    }
-    
-    var href = location.href;
-    if (href.indexOf('kakao=1') >= 0) {
-      location = 'https://open.kakao.com/o/sByUiqg';
-    } else if (href.indexOf('fb=1') >= 0) {
-      if (isMobile()) {
-        location = 'fb-messenger://user-thread/100001739938814';
-      } else {
-        location = 'http://fb.me/maitrouble';
-      }
-    }
-  </script>
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Sin-Woo Bang</title>
+  <meta name="author" content="Sin-Woo Bang">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Simonetta:400,900|Balthazar">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div id="w" itemscope itemtype="http://schema.org/Person">
+		<header class="clearfix">
+			<div id="info">
+				<h1><span itemprop="name">방신우</span></h1>
+        <h3><span itemprop="engName">Sin-Woo Bang</span></h2>
+				<h3><span itemprop="jobTitle">Programmer @Add2paper co.</span></h3>
+				<small itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				  <span itemprop="addressLocality">Bucheon-si</span>,
+				  <span itemprop="addressRegion">Gyeonggi-do</span>,
+				  <span itemprop="addressCountry">Republic of Korea</span>
+				</small>
+				<small>
+          <span itemprop="email">
+            <a href="mailto:sinwoobang@gmail.com">sinwoobang@gmail.com</a>
+          </span>
+        </small>
+				<small>
+          <a href="http://sinwoobang.me/" itemprop="url">Home</a> &bull;
+          <a href="http://github.com/sinwoobang" itemprop="url" target="_blank">@sinwoobang</a>
+        </small>
+			</div>
+
+			<div id="photo">
+				<img src="https://avatars2.githubusercontent.com/u/6701124?v=3&s=262" alt="sinwoobang resume photo avatar" itemprop="image" />
+			</div>
+		</header>
+
+		<!-- <section id="profile">
+			<h2>My History &amp; Profile</h2>
+			<p itemprop="description">blah blah.</p>
+			<p>blah blah</p>
+		</section> -->
+
+		<section id="skills" class="clearfix" itemscope itemtype="http://schema.org/ItemList">
+			<h2 itemprop="name">Skillset</h2>
+			<section id="skills-left">
+				<h4 itemprop="about">Development</h4>
+				<ul>
+          <li itemprop="itemListElement">Python</li>
+          <li itemprop="itemListElement">Django &amp; Flask &amp; Bottlepy</li>
+          <li itemprop="itemListElement">Web Backend</li>
+          <li itemprop="itemListElement">Mobile App Backend</li>
+					<li itemprop="itemListElement">HTML5/CSS3</li>
+					<li itemprop="itemListElement">JavaScript &amp; jQuery</li>
+					<li itemprop="itemListElement">MySQL</li>
+				</ul>
+			</section>
+		</section>
+
+		<section id="education">
+			<h2>Past Education</h2>
+			<p><span itemprop="alumniOf">Computer Engineering, Kyunghee Univ</span> ~ 2014-Present)</p>
+		</section>
+
+		<section id="experience">
+			<h2>Work Experience</h2>
+      <p>Software Engineer, Co-Founder <span itemprop="worksFor">Klavis, Inc.</span> ~ 2015-2016</p>
+			<p>Software Engineer <span itemprop="worksFor"><a href="http://greedeat.com" target="_blank">Greedeat, Inc.</a></span> ~ 2015-2016</p>
+			<p>Software Engineer <span itemprop="worksFor"><a href="http://add2paper.com" target="_blank">Add2paper, Inc.</a></span> ~ 2015-2016</p>
+			<p>Dev Team Leader <span itemprop="worksFor"><a href="http://add2paper.com" target="_blank">Add2paper, Inc.</a></span> ~ 2016-Present</p>
+		</section>
+
+		<!-- <section id="articles">
+			<h2>Recent Articles</h2>
+			<p itemscope itemtype="http://schema.org/Article">
+			<span itemprop="name">
+			<a href="http://www.hongkiat.com/blog/css-javascript-fallback-methods/" itemprop="url" title="10 Useful Fallback Methods For CSS And Javascript">10 Useful Fallback Methods For CSS And Javascript</a></span> &bull; Published in <span itemprop="datePublished">July 2012</span></p>
+		</section> -->
+	</div>
+</body>
 </html>
